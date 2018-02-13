@@ -1,0 +1,47 @@
+package Program;
+
+​
+
+public class AllColorsOfTheRainbow {
+
+public static void main(String[] args){
+
+Rainbow at = new Rainbow();
+
+System.out.println("1st hue"+at.hue);
+
+at.changeTheHueOfTheColor(7);
+
+System.out.println("2st hue"+at.hue);
+
+System.out.println("1st db"+at.db);
+
+at.changeTheDouble(76);
+
+System.out.println("2st db"+at.db);
+
+} 
+
+}
+
+class Rainbow{
+
+int anlntegerRepresentingColors = 0;
+
+int hue = 1;
+
+int db = 56;
+
+void changeTheHueOfTheColor(int newHue) {
+
+hue = newHue;
+
+}
+
+int changeTheDouble(int newdb){
+
+return db = newdb;
+
+}
+
+}
