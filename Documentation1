@@ -1,0 +1,8 @@
+package com.company;
+
+public class Documentation1 {
+    /** Field comments */
+    public int i;
+    /** Method comments */
+    public void a() {}
+}
