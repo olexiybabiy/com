@@ -1,0 +1,19 @@
+package com.company;
+
+class VelocityCalculator {
+    static float velocity (float d, float t) {
+        if(t == 0) return 0f;
+        else return d/t;
+    }
+}
+
+public class VelocityTester {
+    public static void main(String[] args) {
+        float dist = 565.3f;
+        float time = 3.6f;
+        System.out.println("Distance: " + dist);
+        System.out.println("Time: " + time);
+        float vel = VelocityCalculator.velocity(dist, time);
+        System.out.println("Velocity: " + vel);
+    }
+}
