@@ -1,0 +1,64 @@
+package com.company;
+
+public class CarMove2 {
+	public static void main(String[] args) {
+		Car car = new Car();
+		
+		char c = 'c';
+		byte b = 0;
+		short s = 0;
+		
+		car.move();
+		car.move((char)c);
+		car.move((byte)b);
+		car.move((short)s);
+		car.move(1);
+		car.move(1L);
+		car.move(1.0f);
+		car.move(1.0);
+		car.move(c, 1);
+		car.move(1, c);
+	}
+}
+
+class Car {
+	void move(){
+	    System.out.println("1st move");
+	}
+	
+	void move(char c){
+	    System.out.println("2st move");
+	}
+	
+	void move(byte b){
+	    System.out.println("3st move");
+	}
+	
+	void move(short s){
+	    System.out.println("4st move");
+	}
+	
+	void move(int i){
+	    System.out.println("5st move");
+	}
+	
+	void move(long L){
+	    System.out.println("6st move");
+	}
+	
+	void move(float f){
+	    System.out.println("7st move");
+	}
+	
+	void move(double d){
+	    System.out.println("8st move");
+	}
+	
+	void move(char c, int i){
+	    System.out.println("9st move");
+	}
+	
+	void move(int i, char c){
+	    System.out.println("10st move");
+	}
+} 	
