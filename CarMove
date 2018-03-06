@@ -1,0 +1,19 @@
+package com.company;
+
+public class CarMove {
+	public static void main(String[] args) {
+		
+		Car car = new Car();
+	
+		car.move();
+		
+	}
+}
+
+class Car {
+    
+	void move() {
+	    System.out.println("Car is moving.");
+	}
+	
+} 	
