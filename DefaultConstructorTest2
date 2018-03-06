@@ -1,0 +1,22 @@
+package com.company;
+
+public class DefaultConstructorTest2 {
+	
+	public static void main(String[] args) {
+		PrintTwo printTwo = new PrintTwo();
+		PrintTwo printTwo2 = new PrintTwo("Bye!");
+	}
+	
+}
+
+class PrintTwo {
+    
+	PrintTwo() {
+		System.out.println("Hello there!");
+	}
+	
+	PrintTwo(String string) {
+		System.out.println(string);
+	}	
+	
+} 
