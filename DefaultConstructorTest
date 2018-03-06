@@ -1,0 +1,17 @@
+package com.company;
+
+public class DefaultConstructorTest {
+	
+	public static void main(String[] args) {
+		Print print = new Print();
+	}
+	
+}
+
+class Print {
+    
+	Print() {
+		System.out.println("Hello there!");
+	}
+	
+} 
