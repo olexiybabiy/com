@@ -1,0 +1,12 @@
+package com.company;
+
+public class ConstructorTest {
+	public static void main(String[] args) {
+		Tester test = new Tester();
+		System.out.println(test.string);
+	}
+}
+
+class Tester {
+	String string = "Hello there!";
+}
