@@ -1,0 +1,19 @@
+package com.company;
+
+public class ConstructorTestTwo {
+	public static void main(String[] args) {
+		TesterTwo test = new TesterTwo();
+		System.out.println("test.string1: " + test.string1);
+		System.out.println("test.string2: " + test.string2);
+		System.out.println("test.string3: " + test.string3);
+	}
+}
+
+class TesterTwo {
+	String string1;
+	String string2 = "Hello there!";
+	String string3;
+	TesterTwo() { 
+	    string3 = "Bye!"; 
+	}
+}
