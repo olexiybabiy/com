@@ -1,0 +1,38 @@
+package com.company;
+
+public class VampireNumbers {	
+		static int a(int i) {
+			return i/1000;
+		}
+		static int b(int i) {
+			return (i%1000)/100;
+		}
+		static int c(int i) {
+			return ((i%1000)%100)/10;
+		}
+		static int d(int i) {
+			return ((i%1000)%100)%10;
+		}
+		static int pc(int i, int j) {
+			return (i * 10) + j;
+		}
+		static void productTest (int i, int m, int n) {
+			if(m * n == i) System.out.println(i + " = " + m + " * " + n);
+		}	
+	public static void main(String[] args) {		
+		for(int i = 1001; i < 9999; i++) {			
+			productTest(i, pc(a(i), b(i)), pc(c(i), d(i)));
+			productTest(i, pc(a(i), b(i)), pc(d(i), c(i)));
+			productTest(i, pc(a(i), c(i)), pc(b(i), d(i)));
+			productTest(i, pc(a(i), c(i)), pc(d(i), b(i)));
+			productTest(i, pc(a(i), d(i)), pc(b(i), c(i)));
+			productTest(i, pc(a(i), d(i)), pc(c(i), b(i)));
+			productTest(i, pc(b(i), a(i)), pc(c(i), d(i)));
+			productTest(i, pc(b(i), a(i)), pc(d(i), c(i)));
+			productTest(i, pc(b(i), c(i)), pc(d(i), a(i)));
+			productTest(i, pc(b(i), d(i)), pc(c(i), a(i)));
+			productTest(i, pc(c(i), a(i)), pc(d(i), b(i)));
+			productTest(i, pc(c(i), b(i)), pc(d(i), a(i)));
+		}			
+	} 
+}
