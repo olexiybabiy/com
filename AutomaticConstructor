@@ -1,0 +1,18 @@
+package com.company;
+
+public class AutomaticConstructor {
+	public static void main(String[] args) {
+		
+		SecondCl second = new SecondCl();
+		
+		second.say();
+	}
+}
+
+class SecondCl {
+	
+	void say() {
+	    System.out.println("Hello there!");
+	}
+	
+} 
