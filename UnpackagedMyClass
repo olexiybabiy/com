@@ -1,0 +1,17 @@
+package com.company;
+
+public class UnpackagedMyClass {
+    public static void main(String[] args) {
+        qwer.Asd sss = new qwer.Asd();
+    }
+}
+
+// Клас з іншого пакету
+
+package qwer;
+
+public class Asd {
+     public Asd(){
+         System.out.print("Hello there!");
+     }
+}
