@@ -1,0 +1,26 @@
+package com.company;
+
+public class OverloadedConstructors {
+    public static void main(String[] args) {
+        new Doc(10).intubate();
+    }
+}
+
+class Doc {
+    Doc(int i) {
+        this("DDDD");
+        int yearsTraining = i;
+        System.out.println("New doc with " + i + " years of training");
+    }
+    Doc(String s) {
+        String degree = s;
+        System.out.println("New doc with " + s + " degree");
+    }
+    void intubate() {
+        System.out.println("prepare patient");
+        laryngoscopy();
+    }
+    void laryngoscopy() {
+        System.out.println("use laryngoscope");
+    }
+}
